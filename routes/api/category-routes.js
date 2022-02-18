@@ -38,6 +38,7 @@ router.get('/:id', async(req, res) => {
   router.put('/:id', (req, res) => {
     try {
       const category = Category.update(req.body, {
+        
         id: req.params.id,
       });
       res.status(200).json(category);
@@ -48,9 +49,14 @@ router.get('/:id', async(req, res) => {
 
   router.delete('/:id', (req, res) => {
     try {
-      const category = Category.destroy(req.params.id);
+      const category = Category.destroy( {
+        where: { 
+        id: req.params.id
+        }
+      });
       res.status(200).json(category);
     } catch (err) {
+      console.log(err);
       res.status(400).json(err);
     }
   });
