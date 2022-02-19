@@ -30,7 +30,7 @@ To to this the user must enter the e-commerce folder and the select the categori
 
 once in ant of these folders the user can check all of a category bey selecting `get all`.  The can look at an individual item by looking at `get by id`. A new entry can be made using the `post` option. An a catagory can be updated using the `put`
 
-Despite lots of effort on my part and that of my tutor and my course TA, the delete function was never able to operate correctly.
+Despite lots of effort on my part and that of my tutor and my course TA, some of the functionality was never able to operate correctly.
 ```
 
 ## Contributing
